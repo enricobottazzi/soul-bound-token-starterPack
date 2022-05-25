@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/daoAffiliation.json",
+    "title": "Dao Affiliation",
+    "type": "object", 
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the name of the asset that the SBT represents"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents"
+        },
+        "memberOf": {
+            "type": "string",
+            "description": "Identifies the name of the organization to which the owner of the SBT is affiliated"
+        },
+        "role": {
+            "type": "string",
+            "description": "Identifies the role in the organization of the SBT owner"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this SBT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+        }
+    },
+    "required" : ["name", "memberOf", "image"]
+}
